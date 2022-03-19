@@ -44,7 +44,7 @@ function setup() {
     targetLabel = 1;
     target = posesArray[poseCounter];
     document.getElementById("poseName").textContent = target;
-    timeLeft = 60;
+    timeLeft = 10;
     document.getElementById("time").textContent = "00:" + timeLeft;
     errorCounter = 0;
     iterationCounter = 0;
