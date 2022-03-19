@@ -182,7 +182,7 @@ function nextPose() {
     console.log("Well done, you have learnt all poses!");
     document.getElementById("finish").textContent = "Amazing!";
     document.getElementById("welldone").textContent = "All poses done.";
-    document.getElementById("accuracy").textContent = accuracy;
+    document.getElementById("accuracy").textContent = accuracy.toFixed(2);
     document.getElementById("sparkles").style.display = "block";
   } else {
     console.log("Well done, you all poses!");
@@ -198,7 +198,7 @@ function nextPose() {
     document.getElementById("welldone").textContent = "Well done, next pose!";
     document.getElementById("sparkles").style.display = "block";
     document.getElementById("poseImg").src = imgArray[poseCounter].src;
-    document.getElementById("accuracy").textContent = accuracy;
+    document.getElementById("accuracy").textContent = accuracy.toFixed(2);
 
     console.log("classifying again");
     timeLeft = 10;
