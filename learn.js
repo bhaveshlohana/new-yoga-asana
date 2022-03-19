@@ -97,7 +97,7 @@ function classifyPose() {
 
 function gotResult(error, results) {
   document.getElementById("welldone").textContent = "";
-  document.getElementById("sparkles").style.display = "none";
+  document.getElementById("sparkles")?.style.display = "none";
   document.getElementById("accuracy").textContent = "";
 
   accuracy = results[0]?.confidence;
